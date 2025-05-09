@@ -302,7 +302,7 @@ function App() {
                 <ReactionButton
                   onClick={() => handleReaction(post.id, "mindblown")}
                   color="#ff00ff"
-                  hoverColor="rgba(255, 0, 255, 0.2)"
+                  hoverColor="hsla(300, 77.20%, 62.20%, 0.20)"
                 >
                   🤯 {post.reactions.mindblown}
                 </ReactionButton>
