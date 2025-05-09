@@ -1,17 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import styled, { keyframes } from "styled-components";
 import {
-  FaCode,
   FaRocket,
   FaTerminal,
-  FaRegCommentDots,
-  FaRegLightbulb,
 } from "react-icons/fa";
 import {
-  SiJavascript,
-  SiPython,
-  SiReact,
-  SiAwsorganizations,
   SiTiktok,
   SiRootsbedrock,
 } from "react-icons/si";
@@ -21,12 +14,6 @@ const gradient = keyframes`
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-`;
-
-const float = keyframes`
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
 `;
 
 // Styled Components
@@ -182,8 +169,7 @@ const initialPosts = [
 
 function App() {
   const [posts, setPosts] = useState(initialPosts);
-  const [activeDemo, setActiveDemo] = useState(null);
-  const [newComment, setNewComment] = useState("");
+
   const [viewMode, setViewMode] = useState("grid");
 
   const handleReaction = (postId, reactionType) => {
